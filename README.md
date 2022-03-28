@@ -6,8 +6,6 @@ Changes:
 - .obj files are now imported with fbximporter to avoid content load error
 - simple patch for successful release build
 
-Note: Compatibility for MonoGame 3.8 NOT TESTED!
-
 Original Code https://github.com/Kosmonaut3d/DeferredEngine
 
 # Deferred Engine For Monogame
