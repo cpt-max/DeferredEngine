@@ -1,6 +1,7 @@
 # Fork of Deferred Engine For Monogame by kosmonautgames
 Changes:
-- im-/ported to Visual Studio 2019 16.8.1 solution/ MonoGame 3.7.1.189
+- ported to .NET 5 (Visual Studio 2019)
+- switched to MonoGame Nugets with compute shader support
 - Main.cs is now Engine.cs
 - .obj files are now imported with fbximporter to avoid content load error
 - simple patch for successful release build
@@ -51,7 +52,7 @@ How to manipulate the scene
 
 Notes:
 
-This solution provides a basic 3d deferred rendering engine implemented in Monogame. You will need to have Monogame (3.6.0187 or newer) installed and Visual Studio 2013+ to compile.
+This solution provides a basic 3d deferred rendering engine implemented in Monogame. You will need Visual Studio 2019+ to compile.
 
 This is not intended to be an engine used for custom programs / games, but rather a playground which makes it easy to understand and implement custom shaders.
 

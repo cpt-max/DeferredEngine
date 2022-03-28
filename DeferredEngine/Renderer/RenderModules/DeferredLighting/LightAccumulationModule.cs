@@ -109,8 +109,8 @@ namespace DeferredEngine.Renderer.RenderModules
             if (GameSettings.g_UseDepthStencilLightCulling > 0)
             {
                 _graphicsDevice.SetRenderTarget(renderTargetDiffuse);
-                _graphicsDevice.Clear(ClearOptions.DepthBuffer, Color.TransparentBlack, 1, 0);
-                _graphicsDevice.Clear(ClearOptions.Stencil, Color.TransparentBlack, 1, 0);
+                _graphicsDevice.Clear(ClearOptions.DepthBuffer, Color.Transparent, 1, 0);
+                _graphicsDevice.Clear(ClearOptions.Stencil, Color.Transparent, 1, 0);
                 ReconstructDepth();
 
                 _g_UseDepthStencilLightCulling = true;
@@ -121,7 +121,7 @@ namespace DeferredEngine.Renderer.RenderModules
                 {
                     _g_UseDepthStencilLightCulling = false;
                     _graphicsDevice.SetRenderTarget(renderTargetDiffuse);
-                    _graphicsDevice.Clear(ClearOptions.DepthBuffer, Color.TransparentBlack, 1, 0);
+                    _graphicsDevice.Clear(ClearOptions.DepthBuffer, Color.Transparent, 1, 0);
                 }
             }
 
@@ -134,7 +134,7 @@ namespace DeferredEngine.Renderer.RenderModules
             //Shaders.deferredPointLightParameter_VolumeTexSizeParam.SetValue(volumeTex.Size);
 
             _graphicsDevice.SetRenderTargets(renderTargetLightBinding);
-            _graphicsDevice.Clear(ClearOptions.Target, Color.TransparentBlack, 1, 0);
+            _graphicsDevice.Clear(ClearOptions.Target, Color.Transparent, 1, 0);
             _graphicsDevice.BlendState = _lightBlendState;
 
             PointLightRenderModule.Draw(pointLights, cameraOrigin, gameTime, _assets, _boundingFrustum, _viewProjectionHasChanged, _view, _viewProjection, _inverseView, _graphicsDevice);

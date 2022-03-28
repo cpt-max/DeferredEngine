@@ -715,7 +715,7 @@ namespace DeferredEngine.Renderer
             if (_ssr != GameSettings.g_SSReflection)
             {
                 _graphicsDevice.SetRenderTarget(_renderTargetScreenSpaceEffectReflection);
-                _graphicsDevice.Clear(Color.TransparentBlack);
+                _graphicsDevice.Clear(Color.Transparent);
 
                 _ssr = GameSettings.g_SSReflection;
             }
